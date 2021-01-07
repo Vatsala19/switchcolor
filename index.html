@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Switch background color</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<button>Click me</button>
+<script type="text/javascript">
+var color = ["red","orange","yellow","pink","light pink","light blue","light green"];
+var i=0;
+document.querySelector("button").addEventListener("click",
+  function(){
+             i=i<color.length?++i:0;
+            document.querySelector("body").style.background=color[i]
+})
+
+</script>
+</body>
+
+</html>
